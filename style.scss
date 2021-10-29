@@ -1,0 +1,123 @@
+$border-default: 5px solid black;
+$color-1: pink;
+$color-2: #b0f51d;
+$color-3: #0f6cf6;
+$color-4: #f047ff;
+$font-color-dark: black;
+
+* {
+	box-sizing: border-box;
+	font-family: "Arial";
+	color: antiquewhite;
+	font-size: 10px;
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+body {
+	background-color: #8595a1;
+}
+.container {
+	background-color: #3a3535;
+	border: $border-default;
+	border-radius: 50px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 1280px;
+	margin: 50px auto;
+	padding: 20px 0;
+	width: 720px;
+
+	.camera{
+		border: $border-default;
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+	}
+
+	.screen{
+		border: $border-default;
+		background-color: #1c1b1b;
+		display: flex;
+		flex-direction: column;
+		//justify-content:space-between;
+		overflow: hidden;
+		width: 90%;
+		height: 80%;
+
+		header{
+			padding: 20px 0;
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		main{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			align-content: space-between;
+			justify-content: space-between;
+			overflow-y: scroll;
+
+			article{
+				padding: 20px 0 20px 20px;
+				text-align: justify;
+				//height: 100%;
+
+			}
+
+			.quiz{
+				//display: grid;
+				//grid-template-columns: repeat(2, 1fr);
+				//grid-template-rows: repeat(2, 1fr);
+				//grid-column-gap: 20px;
+				//grid-row-gap: 20px;
+				padding: 30px 0 30px 20px;
+				display: flex;
+				flex-direction: column;
+
+
+				.quiz-button{
+					border: $border-default;
+					border-radius: 10px;
+					color: $font-color-dark;
+					cursor: pointer;
+					font-weight: bolder;
+					padding: 30px 10px;
+					margin-top: 20px;
+
+					&:nth-of-type(1){
+						background-color: $color-1;
+						box-shadow: 0 0 15px $color-1;
+					}
+
+					&:nth-of-type(2){
+						background-color: $color-2;
+						box-shadow: 0 0 15px $color-2;
+					}
+
+					&:nth-of-type(3){
+						background-color: $color-3;
+						box-shadow: 0 0 15px $color-3;
+					}
+
+					&:nth-of-type(4){
+						background-color: $color-4;
+						box-shadow: 0 0 15px $color-4;
+					}
+
+					&:hover{
+						filter: brightness(60%);
+					}
+				}
+			}
+		}
+	}
+}
+
