@@ -1,45 +1,41 @@
-
 let questionIndex = 0;
+let correctAnswer = null;
 const questionArea = document.querySelector('main article');
 const buttons = document.querySelectorAll('.quiz-button');
 const glass = document.querySelector('.screen');
+
+buttons.forEach(function(btn, idx){
+    btn.addEventListener('click', function(){
+        console.log(idx, questionIndex, correctAnswer, questions.length);
+        if (idx === correctAnswer){
+            if (questionIndex < questions.length - 1){
+                correctAnswer = showQuestion(++questionIndex);
+            } else {
+                questionArea.textContent = "Gratulacje ;) Jesteś zwolniona.";
+                buttons.forEach((btn) => btn.classList.add('d-none'));
+            }
+        } else {
+            btn.classList.add('wrongAnswer');
+            console.log(btn);
+        }
+    });
+});
+
 
 function showQuestion(index){
     let currentQuestion = questions[index];
     questionArea.textContent = currentQuestion.question;
     showAnswers(currentQuestion);
 
+    return currentQuestion.correctAnswerIndex;
 }
 
-function showAnswers(choices) {
-    buttons.forEach(function (btn, index) {
-        btn.textContent = choices.answerChoices[index];
-        btn.addEventListener('click', function () {
-            console.log(index);
-            if (index == choices.correctAnswerIndex) {
-                animate1();
-                setTimeout(animate2,300);
-                questionIndex++;
-                showQuestion(questionIndex);
-            } else {
-                console.log('zla odpowiedz');
-            }
-        });
+function showAnswers(currentQuestion){
+    buttons.forEach(function(btn, index){
+        btn.textContent = currentQuestion.answerChoices[index];
+        btn.classList.remove('wrongAnswer');
     });
 }
 
-function animate1(){
-    glass.classList.add('nextQuestion');
-}
-
-function animate2(){
-    glass.classList.remove('nextQuestion');
-}
-
-// function wrongAnswer(){
-//     glass.classList.add('wrongAnswer');
-//     setTimeout(() => glass.classList.remove('wrongAnswer'))
-// }
-
-showQuestion(questionIndex);
+correctAnswer = showQuestion(questionIndex);
 

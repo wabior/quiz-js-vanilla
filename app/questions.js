@@ -27,7 +27,7 @@ questions =
         },
         {
             "question": "Wybierz zestaw słów z języka proaktywnego.",
-            "answerChoices": ["nie mogę, muszę, z tym nie da się nic zrobić", "zrobię to, muszę, wybieram", "to nie moja wina, mogę, wybieram", "mogę, wybieram, zrobię to"],
+            "answerChoices": ["nie mogę, muszę, z tym nie da się nic zrobić", "zrobię to, muszę, wybieram", "to nie moja wina, muszę, wybieram", "mogę, wybieram, zrobię to"],
             "correctAnswerIndex": 3,
         },
         {
@@ -37,7 +37,7 @@ questions =
         },
         {
             "question": "Nawyk komunikacji empatycznej oparty jest na zasadach...",
-            "answerChoices": ["szacunku, wzajemnego zrozumienia,empatii i odwagi", "korzyściach, wartościach i odwadze", "szacunku, emocjach, potrzebach", "potrzebach, korzyściach, uczuciach"],
+            "answerChoices": ["szacunku, zrozumienia, empatii i odwagi", "korzyściach, wartościach i odwadze", "szacunku, emocjach, potrzebach", "potrzebach, korzyściach, uczuciach"],
             "correctAnswerIndex": 0,
         },
         {
