@@ -9,7 +9,17 @@ buttons.forEach(function(btn, idx){
         console.log(idx, questionIndex, correctAnswer, questions.length);
         if (idx === correctAnswer){
             if (questionIndex < questions.length - 1){
+                
+                glass.classList.add('nextQuestion');
+                questionArea.classList.add('d-none');
                 correctAnswer = showQuestion(++questionIndex);
+                buttons.forEach((btn) => btn.classList.add('d-none'))
+                setTimeout(function(){
+                    glass.classList.remove('nextQuestion');
+                    buttons.forEach((btn) => btn.classList.remove('d-none'))
+                    questionArea.classList.remove('d-none');
+                }, 600);
+                
             } else {
                 questionArea.textContent = "Gratulacje ;) Jesteś zwolniona.";
                 buttons.forEach((btn) => btn.classList.add('d-none'));

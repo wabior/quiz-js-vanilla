@@ -5,7 +5,7 @@
   color: antiquewhite;
   font-size: 10px;
   font-size: 1.5rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -83,15 +83,22 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.container .screen main::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 .container .screen main article {
-  padding: 20px 0 20px 20px;
+  padding: 30px;
   text-align: justify;
 }
 
 .container .screen main .quiz {
-  padding: 30px 0 30px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +106,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 30px;
 }
 
 .container .screen main .quiz .quiz-button {
@@ -107,6 +115,7 @@ body {
   color: black;
   cursor: pointer;
   font-weight: bolder;
+  font-size: 1.2rem;
   padding: 30px 10px;
   margin-top: 20px;
 }
@@ -141,17 +150,52 @@ body {
 }
 
 .nextQuestion {
-  opacity: 0;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-name: correct;
+          animation-name: correct;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .wrongAnswer {
   background-color: red !important;
   -webkit-box-shadow: 0 0 15px red !important;
           box-shadow: 0 0 15px red !important;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .d-none {
   display: none;
+}
+
+@-webkit-keyframes correct {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+    background-color: #bbff56;
+    -webkit-box-shadow: 0 0 100px white;
+            box-shadow: 0 0 100px white;
+  }
+  0% {
+    opacity: 100%;
+  }
+}
+
+@keyframes correct {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+    background-color: #bbff56;
+    -webkit-box-shadow: 0 0 100px white;
+            box-shadow: 0 0 100px white;
+  }
+  0% {
+    opacity: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
