@@ -16,7 +16,8 @@ buttons.forEach(function(btn, idx){
                 buttons.forEach((btn) => btn.classList.add('d-none'))
                 setTimeout(function(){
                     glass.classList.remove('nextQuestion');
-                    buttons.forEach((btn) => btn.classList.remove('d-none'))
+                    buttons.forEach((btn) => btn.classList.remove('d-none', 'hasactive', 'focus'));
+                    document.activeElement = null;
                     questionArea.classList.remove('d-none');
                 }, 600);
                 
