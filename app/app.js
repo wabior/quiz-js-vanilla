@@ -22,7 +22,7 @@ buttons.forEach(function(btn, idx){
                 }, 600);
                 
             } else {
-                questionArea.textContent = "Gratulacje ;) Jesteś zwolniona.";
+                questionArea.textContent = "Gratulacje ;)       Jesteś zwolniony.";
                 buttons.forEach((btn) => btn.classList.add('d-none'));
             }
         } else {

@@ -73,7 +73,7 @@ body {
 
 			article{
 				padding: 30px;
-				text-align: justify;
+				text-align: left;
 			}
 
 			.quiz{
@@ -138,17 +138,8 @@ body {
 }
 
 @keyframes correct {
-	0% {
-	  opacity: 100%;
-	}
-  
 	50% {
-		opacity: 50%;
-		background-color: rgb(187, 255, 86);
+		background-color: rgb(203, 255, 126);
 		box-shadow: 0 0 100px white;
 	}
-
-	0% {
-		opacity: 100%;
-	  }
   }
