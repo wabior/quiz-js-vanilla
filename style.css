@@ -13,6 +13,7 @@
 
 body {
   background-color: #8595a1;
+  overflow: hidden;
 }
 
 .container {
@@ -36,6 +37,10 @@ body {
   margin: 50px auto;
   padding: 20px 0;
   width: 720px;
+  -webkit-transform: scale(65%);
+          transform: scale(65%);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .container .camera {

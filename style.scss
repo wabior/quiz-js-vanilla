@@ -19,6 +19,7 @@ $font-color-dark: black;
 
 body {
 	background-color: #8595a1;
+	overflow: hidden;
 }
 .container {
 	background-color: #3a3535;
@@ -34,6 +35,10 @@ body {
 	padding: 20px 0;
 	width: 720px;
 
+	// zoom
+	transform: scale(65%);
+	transform-origin: top center;
+	
 	.camera{
 		border: $border-default;
 		border-radius: 50%;
