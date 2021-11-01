@@ -4,6 +4,7 @@ let score = {'correct': 0, 'wrong': 0};
 const questionArea = document.querySelector('main article');
 const buttons = document.querySelectorAll('.quiz-button');
 const glass = document.querySelector('.screen');
+questions = questions.sort((a, b) => 0.5 - Math.random());
 
 function buttonsActions(){
     buttons.forEach(function(btn, idx){
