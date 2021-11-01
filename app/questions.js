@@ -61,5 +61,23 @@ questions =
             "question": "Który z wymienionych nawyków NIE jest jednym z 7 nawyków skutecznego działania?",
             "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu"],
             "correctAnswerIndex": 3,
+        },
+        {
+            "question": "Skuteczny cel skupia się na:",
+            "answerChoices": [
+                "Sposobie",
+                "Działaniu",
+                "Rezultacie",
+                "Elastyczności"],
+            "correctAnswerIndex": 2,
+        },
+        {
+            "question": "Zaczynanie z wizją końca oparte jest na założeniu, że...",
+            "answerChoices": [
+                "wszystko tworzy się dwa razy. Najpierw w umyśle, potem fizycznie.",
+                "okoliczności decydują o naszym życiu.",
+                "nie wiadomo jak potoczy się życie, dlatego należy płynąć z prądem.",
+                "nieważne, w której jest się dżungli, ważne że wycinka dobrze idzie."],
+            "correctAnswerIndex": 0,
         }
     ]
