@@ -21,23 +21,35 @@ questions =
         //     "correctAnswerIndex": 2,
         // },
         {
-            "question": "Reaktywne działanie jest oparte na...",
-            "answerChoices": ["uczuciach", "wartościach", "emocjach", "potrzebach"],
-            "correctAnswerIndex": 0,
+            "question": "Reaktywne działanie NIE jest oparte na...",
+            "answerChoices": [
+                "uczuciach",
+                "zasadach", 
+                "emocjach", 
+                "obwinianiu"],
+            "correctAnswerIndex": 1,
         },
         {
             "question": "Wybierz zestaw słów z języka proaktywnego.",
-            "answerChoices": ["nie mogę, muszę, z tym nie da się nic zrobić", "zrobię to, muszę, wybieram", "to nie moja wina, muszę, wybieram", "mogę, wybieram, zrobię to"],
+            "answerChoices": [
+                "nie mogę, muszę, z tym nie da się nic zrobić",
+                "zrobię to, muszę, wybieram",
+                "to nie moja wina, muszę, wybieram",
+                "mogę, wybieram, zrobię to"],
             "correctAnswerIndex": 3,
         },
         {
             "question": "Nawykiem poszukiwania wzajemnych korzyści jest?",
-            "answerChoices": ["przegrana-wygrana", "przegrana-przegrana", "wygrana-wygrana", "wygrana-przegrana"],
+            "answerChoices": ["przegrana - wygrana", "przegrana - przegrana", "wygrana - wygrana", "wygrana - przegrana"],
             "correctAnswerIndex":  2,
         },
         {
-            "question": "Nawyk komunikacji empatycznej oparty jest na zasadach...",
-            "answerChoices": ["szacunku, zrozumienia, empatii i odwagi", "korzyściach, wartościach i odwadze", "szacunku, emocjach, potrzebach", "potrzebach, korzyściach, uczuciach"],
+            "question": "Nawyk komunikacji empatycznej oparty jest na...",
+            "answerChoices": [
+                "szacunku, słuchaniu, zrozumieniu",
+                "porównywaniu osób",
+                "sondowaniu i osądzaniu",
+                "utożsamianiu i udzielaniu rad"],
             "correctAnswerIndex": 0,
         },
         {
@@ -47,7 +59,7 @@ questions =
         },
         {
             "question": "Który z wymienionych nawyków NIE jest jednym z 7 nawyków skutecznego działania?",
-            "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Myśl w kategoriach wygrana-przegrana"],
+            "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu kompromis"],
             "correctAnswerIndex": 3,
         }
     ]

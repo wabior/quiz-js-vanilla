@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   height: 1280px;
-  margin: auto;
+  margin: 10px auto;
   padding: 20px 0;
   width: 720px;
   -webkit-transform: scale(1.3);
