@@ -59,7 +59,7 @@ questions =
         },
         {
             "question": "Który z wymienionych nawyków NIE jest jednym z 7 nawyków skutecznego działania?",
-            "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu kompromis"],
+            "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu"],
             "correctAnswerIndex": 3,
         }
     ]
