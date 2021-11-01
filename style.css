@@ -34,13 +34,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 1280px;
-  margin: 50px auto;
+  margin: auto;
   padding: 20px 0;
   width: 720px;
-  -webkit-transform: scale(65%);
-          transform: scale(65%);
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .container .camera {
@@ -187,6 +187,22 @@ body {
     background-color: #cbff7e;
     -webkit-box-shadow: 0 0 100px white;
             box-shadow: 0 0 100px white;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
   }
 }
 /*# sourceMappingURL=style.css.map */

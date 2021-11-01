@@ -20,6 +20,7 @@ $font-color-dark: black;
 body {
 	background-color: #8595a1;
 	overflow: hidden;
+
 }
 .container {
 	background-color: #3a3535;
@@ -31,13 +32,13 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	height: 1280px;
-	margin: 50px auto;
+	margin: auto;
 	padding: 20px 0;
 	width: 720px;
 
 	// zoom
-	transform: scale(65%);
-	transform-origin: top center;
+	transform: scale(1.3);
+	transform-origin: top;
 	
 	.camera{
 		border: $border-default;
@@ -147,4 +148,17 @@ body {
 		background-color: rgb(203, 255, 126);
 		box-shadow: 0 0 100px white;
 	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		transform: scale(.9);
+		transform-origin: top center;
+	}
   }
+
+@media screen and (min-width: 1600px) {
+	.container {
+		transform: scale(.65);
+	}
+}
