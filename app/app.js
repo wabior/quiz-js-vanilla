@@ -1,19 +1,13 @@
 const questionArea = document.querySelector('main article');
 const buttons = document.querySelectorAll('.quiz-button');
 const glass = document.querySelector('.screen');
-let questionIndex = 10;
+let questionIndex = 0;
 let correctAnswer = null;
 let score = {'correct': 0, 'wrong': 0};
 questions = questions.sort((a, b) => 0.5 - Math.random());
 
-function onClick(btn, idx){
-    if (idx === correctAnswer){
-
-        ++score.correct;
-
-        if (questionIndex < questions.length - 1){
-
-            glass.classList.add('nextQuestion');
+function nextQuestion(){
+    glass.classList.add('nextQuestion');
             questionArea.classList.add('d-none');
             correctAnswer = showQuestion(++questionIndex);
             buttons.forEach((btn) => btn.classList.add('d-none'))
@@ -23,6 +17,16 @@ function onClick(btn, idx){
                 document.activeElement = null;
                 questionArea.classList.remove('d-none');
             }, 600);
+}
+
+function onClick(btn, idx){
+    if (idx === correctAnswer){
+
+        ++score.correct;
+
+        if (questionIndex < questions.length - 1){
+            
+            nextQuestion();            
             
         } else {
             glass.classList.add('nextQuestion');
