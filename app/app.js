@@ -1,7 +1,7 @@
 const questionArea = document.querySelector('main article');
 const buttons = document.querySelectorAll('.quiz-button');
 const glass = document.querySelector('.screen');
-let questionIndex = 0;
+let questionIndex = 10;
 let correctAnswer = null;
 let score = {'correct': 0, 'wrong': 0};
 questions = questions.sort((a, b) => 0.5 - Math.random());
@@ -44,9 +44,7 @@ function onClick(btn, idx){
 
 function buttonsActions(){
     buttons.forEach(function(btn, idx){
-        btn.addEventListener('click', ()=>{
-            onClick(btn, idx);
-        });
+        btn.addEventListener('click', () => onClick(btn, idx));
     });
 }
 
