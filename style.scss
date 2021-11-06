@@ -4,12 +4,14 @@ $color-2: #fff235;
 $color-3: #6d94cf;
 $color-4: #ffa620;
 $font-color-dark: black;
+$bg-color-dark: #1c1b1b;
+$bg-color-light: #ffffff;
+$glass-bg-color: $bg-color-light;
 
 * {
 	box-sizing: border-box;
 	font-family: "Arial";
-	color: antiquewhite;
-	font-size: 10px;
+	color: $bg-color-dark;
 	font-size: 1.5rem;
 	letter-spacing: 1.3px;
 	margin: 0;
@@ -32,7 +34,6 @@ body {
 	background-color: #3a3535;
 	border: $border-default;
 	border-radius: 50px;
-	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -55,7 +56,7 @@ body {
 
 	.screen{
 		border: $border-default;
-		background-color: #1c1b1b;
+		background-color: $glass-bg-color;
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
