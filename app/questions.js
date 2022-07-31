@@ -12,14 +12,9 @@ questions =
         },
         {
             "question": "Który wzór określa synergię:",
-            "answerChoices": ["1 + 1 = 2", "1 + 1 = 3", "2 != 5", "n!"],
+            "answerChoices": ["1 + 1 = 2", "1 + 1 > 2", "2 != 5", "n!"],
             "correctAnswerIndex": 1,
         },
-        // {
-        //     "question": "Która odpowiedź zawiera poprawną kolejność proaktywnego działania?",
-        //     "answerChoices": ["REFLEKSJA-WYBÓR->DZIAŁANIE->BODZIEC", "BODZIEC->DZIAŁANIE->REFLEKSJA-WYBÓR", "BODZIEC->REFLEKSJA-WYBÓR->DZIAŁANIE", "REFLEKSJA-WYBÓR->BODZIEC->DZIAŁANIE"],
-        //     "correctAnswerIndex": 2,
-        // },
         {
             "question": "Reaktywne działanie NIE jest oparte na...",
             "answerChoices": [
@@ -33,14 +28,14 @@ questions =
             "question": "Wybierz zestaw słów z języka proaktywnego.",
             "answerChoices": [
                 "nie mogę, muszę, z tym nie da się nic zrobić",
-                "zrobię to, muszę, wybieram",
+                "zrobię to, muszę, nie mam innego wyjścia",
                 "to nie moja wina, muszę, wybieram",
                 "mogę, wybieram, zrobię to"],
             "correctAnswerIndex": 3,
         },
         {
             "question": "Nawykiem poszukiwania wzajemnych korzyści jest?",
-            "answerChoices": ["przegrana - wygrana", "przegrana - przegrana", "wygrana - wygrana", "wygrana - przegrana"],
+            "answerChoices": ["kompromis", "przegrana - przegrana", "wygrana - wygrana", "wygrana - przegrana"],
             "correctAnswerIndex":  2,
         },
         {
@@ -54,12 +49,12 @@ questions =
         },
         {
             "question": "Jak brzmi Nawyk pierwszy?",
-            "answerChoices": ["Zaczynaj z wizją końca", "Bądź proaktywny", "Twórz synergię", "Myśl w kategoriach wygrana-wygrana"],
+            "answerChoices": ["Zaczynaj z wizją końca", "Bądź proaktywny", "Wszystko tworzy się 2 razy", "Myśl w kategoriach wygrana-wygrana"],
             "correctAnswerIndex": 1,
         },
         {
             "question": "Który z wymienionych nawyków NIE jest jednym z 7 nawyków skutecznego działania?",
-            "answerChoices": ["Bądź proaktywny", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu"],
+            "answerChoices": ["Staraj się najpierw zrozumieć, potem być zrozumiany", "Rób najpierw to, co najważniejsze", "Ostrz piłę", "Dąż do kompromisu"],
             "correctAnswerIndex": 3,
         },
         {
@@ -76,7 +71,7 @@ questions =
             "answerChoices": [
                 "wszystko tworzy się dwa razy. Najpierw w umyśle, potem fizycznie.",
                 "okoliczności decydują o naszym życiu.",
-                "nie wiadomo jak potoczy się życie, dlatego należy płynąć z prądem.",
+                "należy płynąć z prądem.",
                 "nieważne, w której jest się dżungli, ważne że wycinka dobrze idzie."],
             "correctAnswerIndex": 0,
         }
